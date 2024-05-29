@@ -96,30 +96,3 @@ alias lc='colorls -lA --sd'
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-# add rbenv init
-eval "$(rbenv init - zsh)"
-
-# add nvm and yarn bins to path
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-export PATH="$PATH:`yarn global bin`"
-
-# add android and flutter sdk tools
-export PATH="$PATH:/Users/saravanabalagi/Library/Android/sdk/platform-tools"
-export PATH="$PATH:/Users/saravanabalagi/Library/Flutter/sdk/bin" 
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/saravanabalagi/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/saravanabalagi/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/saravanabalagi/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/saravanabalagi/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
