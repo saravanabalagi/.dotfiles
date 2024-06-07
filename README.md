@@ -4,10 +4,11 @@
 
 1. fonts
 
-    - Download Jetbrains Mono Nerd font from [here](https://www.nerdfonts.com/font-downloads) and install it.
-    - Set the terminal font to Jetbrains Mono Nerd font.
+    - Download Jetbrains Mono Nerd font from [here](https://www.nerdfonts.com/font-downloads) and install it
+    - Set the terminal font to Jetbrains Mono Nerd font
       - For vscode, prepend `"JetBrainsMonoNL NFP"` to `editor.fontFamily`
-      - For other terminals, set the same font using GUI or config file as appropriate.
+      - For macOS, import the included [Mocha terminal profile](assets/Mocha.terminal)
+      - For other terminals, set the same font using GUI or config file as appropriate
 
 2. tpm 
 
@@ -70,10 +71,9 @@ stow .
 
 - Open a new terminal session and enjoy the new setup.
 
-### Troubleshooting
+## Troubleshooting
 
-- If tmux config is not loaded, press `prefix` `I` (by default it is `Ctrl+B` `I`) to install plugins. Use `tmux kill-server` to stop and restart tmux, if necessary. 
-- For macOS, you shall import the included [Mocha terminal profile](assets/Mocha.terminal), which has the necessary font, terminal type, keybindings and other settings.
+- If tmux config is not loaded, press `prefix` `I` (by default it is `Ctrl+B` `I`) to install plugins. Use `tmux kill-server` to stop and restart tmux, if necessary.
 
 ## References and Acknowledgements
 
