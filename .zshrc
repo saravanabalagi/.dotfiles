@@ -92,7 +92,12 @@ alias c='clear'
 alias ll='ls -lh'
 alias lc='colorls -lA --sd'
 
+# If user has a local bin directory, add it to the path
+[ -d "${HOME}/.local/bin" ] && export PATH=${HOME}/.local/bin:${PATH}
+
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
+# User specific environment and startup programs
+# example: conda initialize
