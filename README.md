@@ -35,17 +35,15 @@ brew install stow fzf zoxide
 
 If brew is not available, you can use conda:
 
-```
+```sh
 conda create -n sys python=3.9
 conda activate sys
 conda install -c conda-forge stow fzf zoxide
-ln -s $(which tmux) ~/.local/bin
+
+# To make bins available systemwide
+ln -s $(which stow) ~/.local/bin
 ln -s $(which zoxide) ~/.local/bin
 ln -s $(which fzf) ~/.local/bin
-
-# Add ~/.local/bin to PATH
-# before shell integrations
-# i.e. eval fzf and zoxide
 ```
 
 Note that removing the conda environment `sys` will invalidate the symlinks.
@@ -65,6 +63,9 @@ mv ~/.config/tmux/tmux.conf ~/.config/tmux/tmux.conf.bak
 
 # Symlink the dotfiles
 stow .
+
+# Update ~/.zshrc after cloning
+# add conda init, path updates, etc. at the end
 ```
 
 ### Enjoy
