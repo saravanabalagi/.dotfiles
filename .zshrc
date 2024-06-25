@@ -89,7 +89,10 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
+alias l='ls'
+alias la='ls -A'
 alias ll='ls -lh'
+alias lla='ls -lhA'
 alias lc='colorls -lA --sd'
 
 # If user has a local bin directory, add it to the path
