@@ -1,6 +1,6 @@
 ## Quickstart
 
-### Install dependencies
+### 1. Install dependencies
 
 1. tmux
 
@@ -64,7 +64,7 @@ ln -s $(which fzf) ~/.local/bin
 Note that removing the conda environment `sys` will invalidate the symlinks.
 </details>
 
-### Clone repo and symlink
+### 2. Clone repo and symlink
 
 Finally symlink the dotfiles to the home directory:
 
@@ -83,13 +83,11 @@ stow .
 # add conda init, path updates, etc. at the end
 ```
 
-### Enjoy
+### 3. First time install
 
-- Open a new terminal session and enjoy the new setup.
-
-## Troubleshooting
-
-- If tmux config is not loaded, press `prefix` `I` (by default it is `Ctrl+b` `I`; note the caps `I`) to install plugins. Use `tmux kill-server` to stop and restart tmux, if necessary.
+- Open a new terminal session and run `tmux`
+- Press `prefix` `I` (by default it is `Ctrl+b` `I`; note the caps `I`) to install plugins
+- Use `tmux kill-server` to stop and restart tmux, if necessary
 
 ## References and Acknowledgements
 
