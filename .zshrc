@@ -97,8 +97,8 @@ alias llc='colorls -lA --sd'
 command -v nvim >/dev/null 2>&1 && alias vim='nvim'
 
 # Shell integrations
-eval "$(fzf --zsh)"
-eval "$(zoxide init --cmd cd zsh)"
+[ -z "$DISABLE_FZF" ] && eval "$(fzf --zsh)"
+[ -z "$DISABLE_ZOXIDE" ] && eval "$(zoxide init --cmd cd zsh)"
 
 # User specific environment and startup programs
 # example: conda initialize, other snippets
