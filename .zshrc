@@ -63,6 +63,23 @@ bindkey '^ ' forward-word
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
+# Word movement and deletion
+export WORDCHARS="${WORDCHARS//[\/._-]/}"           # Opt+Left/Right/Backspace stop at punctuation
+backward-kill-space-word() {
+    local WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>@+:"'\'','
+    zle backward-kill-word
+}
+zle -N backward-kill-space-word
+backward-kill-path-component() {
+    local WORDCHARS='*?_-.[]~=&;!#$%^(){}<>@+:"'\'','
+    zle backward-kill-word
+}
+zle -N backward-kill-path-component
+bindkey '^[[1;4D' vi-backward-blank-word            # Shift+Opt+Left (Jump big WORD)
+bindkey '^[[1;4C' vi-forward-blank-word             # Shift+Opt+Right (Jump big WORD)
+bindkey '^[[1;4\x7f' backward-kill-space-word       # Shift+Opt+Backspace (Delete big WORD)
+bindkey '^[[1;6\x7f' backward-kill-path-component   # Ctrl+Shift+Backspace (Delete path component)
+
 # History
 SAVEHIST=20000
 HISTSIZE=25000
