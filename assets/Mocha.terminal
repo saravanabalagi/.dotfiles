@@ -157,6 +157,8 @@
 	b3KiFhhYTlNPYmplY3QIERokKTI3SUxRU1ddZGp3fqmrrbK9xs7RAAAAAAAAAQEAAAAA
 	AAAAGQAAAAAAAAAAAAAAAAAAANo=
 	</data>
+	<key>Bell</key>
+	<false/>
 	<key>CursorColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -172,7 +174,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
 	AAGGoF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290gAGkCwwVFlUkbnVsbNQNDg8QERIT
-	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNAJgAAAAAAABAQgAKAA18QGkpl
+	FFZOU1NpemVYTlNmRmxhZ3NWTlNOYW1lViRjbGFzcyNAKAAAAAAAABAQgAKAA18QGkpl
 	dEJyYWluc01vbm9OTE5GUC1SZWd1bGFy0hcYGRpaJGNsYXNzbmFtZVgkY2xhc3Nlc1ZO
 	U0ZvbnSiGRtYTlNPYmplY3QIERokKTI3SUxRU1heZ253foWOkJKUsbbBytHUAAAAAAAA
 	AQEAAAAAAAAAHAAAAAAAAAAAAAAAAAAAAN0=
@@ -182,7 +184,7 @@
 	<key>FontWidthSpacing</key>
 	<integer>1</integer>
 	<key>ProfileCurrentVersion</key>
-	<real>2.0699999999999998</real>
+	<real>2.0899999999999999</real>
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMS
@@ -290,12 +292,20 @@
 		<string>[34~</string>
 		<key>F728</key>
 		<string>[3~</string>
+		<key>^$007F</key>
+		<string>[1;6</string>
 		<key>^F702</key>
 		<string>[1;5D</string>
 		<key>^F703</key>
 		<string>[1;5C</string>
 		<key>^F728</key>
 		<string>[3;5~</string>
+		<key>~$007F</key>
+		<string>[1;4</string>
+		<key>~$F702</key>
+		<string>[1;4D</string>
+		<key>~$F703</key>
+		<string>[1;4C</string>
 		<key>~007F</key>
 		<string></string>
 		<key>~F702</key>
